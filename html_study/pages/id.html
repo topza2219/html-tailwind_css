@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้เกี่ยวกับ id ใน HTML</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-rose-100 to-pink-100 min-h-screen flex justify-center p-6">
+
+    <div class="id-content bg-white max-w-4xl w-full rounded-2xl shadow-lg p-6 md:p-10">
+
+        <h1 class="text-3xl font-bold text-rose-700 mb-4 text-center">
+            🆔 เรียนรู้เกี่ยวกับ id ใน HTML
+        </h1>
+
+        <p class="text-gray-600 mb-3">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการใช้
+            <span class="font-semibold text-rose-600">id</span>
+            ซึ่งเป็น <strong>แอตทริบิวต์ (attribute)</strong>
+            ไม่ใช่แท็ก HTML
+        </p>
+
+        <p class="text-gray-600 mb-6">
+            <span class="font-semibold">id</span>
+            ใช้สำหรับกำหนดตัวระบุที่ไม่ซ้ำกันให้กับองค์ประกอบในหน้าเว็บ
+            โดยสามารถนำไปใช้กับ
+            <span class="font-semibold">CSS</span>
+            และ
+            <span class="font-semibold">JavaScript</span>
+            ได้
+        </p>
+
+        <!-- Code Example -->
+        <h3 class="text-xl font-semibold text-rose-800 mb-3">
+            💻 ตัวอย่างโค้ด HTML ที่ใช้ id
+        </h3>
+
+        <pre class="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm mb-6">
+&lt;div id="unique-id"&gt;
+    &lt;h1&gt;หัวข้อหลัก&lt;/h1&gt;
+    &lt;p&gt;นี่คือย่อหน้าที่มี id&lt;/p&gt;
+&lt;/div&gt;
+        </pre>
+
+        <p class="text-gray-600 mb-4">
+            ในตัวอย่างข้างต้น เราได้กำหนด
+            <span class="font-semibold text-rose-600">id="unique-id"</span>
+            ให้กับแท็ก <code>&lt;div&gt;</code>
+            ซึ่งต้อง <strong>ไม่ซ้ำกับ id อื่นในหน้าเดียวกัน</strong>
+        </p>
+
+        <!-- Result -->
+        <h3 class="text-xl font-semibold text-rose-800 mb-3">
+            📌 ตัวอย่างบล็อกที่แสดงผลลัพธ์
+        </h3>
+
+        <div id="unique-id" class="border-2 border-rose-400 rounded-xl p-4 bg-rose-50">
+            <h2 class="text-lg font-bold">หัวข้อหลัก</h2>
+            <p>นี่คือย่อหน้าที่มี id</p>
+        </div>
+
+        <!-- CSS & JS Usage -->
+        <div class="mt-6 bg-gray-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold mb-2">ตัวอย่างการใช้งาน id</p>
+            <p>🎨 CSS: <code>#unique-id { color: red; }</code></p>
+            <p>⚡ JavaScript: <code>document.getElementById("unique-id")</code></p>
+        </div>
+
+        <!-- Back -->
+        <div class="text-center mt-8">
+            <button
+                onclick="window.location.href='../index.html'"
+                class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                ⬅ กลับไปหน้าหลัก
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เรียนรู้กราฟิกใน HTML</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-red-100 p-6 min-h-screen">
+
+<div class="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+    <h1 class="text-3xl font-bold text-red-700 mb-4 text-center">🎨 เรียนรู้กราฟิกใน HTML</h1>
+    <p class="mb-2">ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการใช้กราฟิกใน HTML เช่น <code>&lt;canvas&gt;</code> และ <code>&lt;svg&gt;</code> เพื่อสร้างภาพและกราฟิกต่างๆ บนเว็บเพจ</p>
+    <p class="mb-2">Canvas ใช้สำหรับวาดกราฟิกแบบเรียลไทม์ด้วย JavaScript ส่วน SVG ใช้สำหรับกราฟิกเวกเตอร์ปรับขนาดได้โดยไม่สูญเสียความคมชัด</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div>
+            <canvas id="canvasRect" width="200" height="100" class="border-2 border-black rounded-lg"></canvas>
+            <p class="mt-2 text-center">สี่เหลี่ยมสีแดง</p>
+        </div>
+        <div>
+            <canvas id="canvasLine" width="200" height="100" class="border-2 border-gray-400 rounded-lg"></canvas>
+            <p class="mt-2 text-center">เส้นจากมุมบนซ้ายไปมุมล่างขวา</p>
+        </div>
+        <div>
+            <canvas id="canvasCircle" width="200" height="100" class="border-2 border-gray-400 rounded-lg"></canvas>
+            <p class="mt-2 text-center">วงกลม</p>
+        </div>
+        <div>
+            <canvas id="canvasText" width="200" height="100" class="border-2 border-gray-400 rounded-lg"></canvas>
+            <p class="mt-2 text-center">ข้อความ Hello World</p>
+        </div>
+    </div>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">ตัวอย่างโค้ด JavaScript สำหรับ Canvas</h2>
+    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
+var c = document.getElementById("canvasRect");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(20, 20, 150, 55);
+
+var c2 = document.getElementById("canvasLine");
+var ctx2 = c2.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.lineTo(200,100);
+ctx2.stroke();
+
+var c3 = document.getElementById("canvasCircle");
+var ctx3 = c3.getContext("2d");
+ctx3.beginPath();
+ctx3.arc(95,50,40,0,2*Math.PI);
+ctx3.stroke();
+
+var c4 = document.getElementById("canvasText");
+var ctx4 = c4.getContext("2d");
+ctx4.font = "30px Arial";
+ctx4.strokeText("Hello World",10,50);
+    </pre>
+
+    <div class="text-center mt-6">
+        <button onclick="window.location.href='../index.html'" 
+            class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full shadow-md transition transform hover:scale-105">
+            ⬅ กลับไปหน้าหลัก
+        </button>
+    </div>
+</div>
+
+<script>
+var c = document.getElementById("canvasRect");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(20, 20, 150, 55);
+
+var c2 = document.getElementById("canvasLine");
+var ctx2 = c2.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.lineTo(200,100);
+ctx2.stroke();
+
+var c3 = document.getElementById("canvasCircle");
+var ctx3 = c3.getContext("2d");
+ctx3.beginPath();
+ctx3.arc(95,50,40,0,2*Math.PI);
+ctx3.stroke();
+
+var c4 = document.getElementById("canvasText");
+var ctx4 = c4.getContext("2d");
+ctx4.font = "30px Arial";
+ctx4.strokeText("Hello World",10,50);
+</script>
+
+</body>
+</html>

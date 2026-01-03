@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้เกี่ยวกับ block</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-4 text-center">เรียนรู้เกี่ยวกับบล็อกใน HTML</h1>
+
+        <p class="mb-4">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการใช้บล็อกใน HTML โดยใช้แท็ก &lt;div&gt; เพื่อจัดกลุ่มเนื้อหาต่างๆ ในหน้าเว็บ
+        </p>
+
+        <p class="mb-6">
+            แท็ก &lt;div&gt; ใช้สำหรับสร้างบล็อกหรือส่วนของเนื้อหาในหน้าเว็บ ซึ่งช่วยให้เราสามารถจัดรูปแบบและจัดการกับเนื้อหาได้ง่ายขึ้น
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">ตัวอย่างโค้ด HTML สำหรับแท็ก &lt;div&gt;</h3>
+        <pre class="bg-gray-100 p-4 rounded mb-4 overflow-x-auto text-sm">
+&lt;div class="block-content"&gt;
+    &lt;h1&gt;หัวข้อหลัก&lt;/h1&gt;
+    &lt;p&gt;นี่คือย่อหน้าที่อยู่ภายในบล็อก&lt;/p&gt;
+&lt;/div&gt;
+        </pre>
+
+        <p class="mb-4">
+            ในตัวอย่างข้างต้น เราได้สร้างบล็อกที่มีคลาสชื่อ "block-content" ซึ่งประกอบด้วยหัวข้อหลักและย่อหน้าหนึ่งย่อหน้า
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">ตัวอย่างบล็อกที่แสดงผลลัพธ์:</h3>
+        <div class="border border-black p-4 rounded bg-gray-50">
+            <h1 class="text-2xl font-bold mb-2">หัวข้อหลัก</h1>
+            <p>นี่คือย่อหน้าที่อยู่ภายในบล็อก</p>
+        </div>
+
+        <div class="text-center mt-6">
+            <button onclick="window.location.href='../index.html'" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">
+                กลับไปหน้าหลัก
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

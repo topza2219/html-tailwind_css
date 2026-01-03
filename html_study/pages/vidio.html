@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้เรื่องวิดิโอ HTML</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-pink-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- Content Card -->
+    <div class="video-content bg-white rounded-2xl shadow-lg max-w-4xl w-full p-6 md:p-10">
+
+        <h1 class="text-3xl font-bold text-blue-700 mb-4 text-center">
+            🎬 เรียนรู้เกี่ยวกับวิดิโอใน HTML
+        </h1>
+
+        <p class="text-gray-600 mb-3">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการฝังวิดิโอใน HTML โดยใช้แท็ก
+            <span class="bg-gray-100 px-2 py-1 rounded text-sm">&lt;video&gt;</span>
+            เพื่อแสดงวิดิโอบนเว็บเพจ
+        </p>
+
+        <p class="text-gray-600 mb-6">
+            แท็ก <span class="font-semibold">&lt;video&gt;</span>
+            ใช้สำหรับฝังไฟล์วิดิโอในหน้าเว็บ ซึ่งสามารถกำหนดแอตทริบิวต์ต่าง ๆ เช่น
+            <span class="text-blue-600">controls</span>,
+            <span class="text-blue-600">autoplay</span>,
+            <span class="text-blue-600">loop</span>,
+            <span class="text-blue-600">muted</span>
+        </p>
+
+        <!-- YouTube -->
+        <h3 class="text-xl font-semibold text-blue-800 mb-3">
+            ▶ ตัวอย่าง YouTube Video
+        </h3>
+
+        <div class="aspect-video mb-8 rounded-xl overflow-hidden shadow">
+            <iframe 
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/ieoZTitbCwM?start=2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Code Example -->
+        <h3 class="text-xl font-semibold text-blue-800 mb-3">
+            💻 ตัวอย่างโค้ด HTML สำหรับแท็ก &lt;video&gt;
+        </h3>
+
+        <pre class="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm mb-4">
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+        </pre>
+
+        <p class="text-gray-600">
+            ในตัวอย่างข้างต้น เราได้กำหนดความกว้างและความสูงของวิดิโอเป็น
+            <span class="font-semibold">320x240</span> พิกเซล และเพิ่มแอตทริบิวต์
+            <span class="text-blue-600 font-semibold">controls</span>
+            เพื่อแสดงแถบควบคุมวิดิโอ
+        </p>
+    </div>
+
+    <!-- Back Button -->
+    <button 
+        onclick="window.location.href='../index.html'"
+        class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+        ⬅ กลับไปหน้าหลัก
+    </button>
+
+</body>
+</html>

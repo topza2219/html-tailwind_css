@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API HTML Example</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-4 text-center">เรียนรู้เกี่ยวกับ API ใน HTML</h1>
+        <p class="mb-6">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการใช้ API ต่างๆ ใน HTML เช่น Geolocation API, Web Storage API เป็นต้น
+        </p>
+
+        <div class="flex justify-center gap-4 mb-4">
+            <button onclick="callApi()" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">
+                เรียก API
+            </button>
+            <button onclick="window.location.href='../index.html'" class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition">
+                กลับไปหน้าหลัก
+            </button>
+        </div>
+
+        <p class="mb-2">ผลลัพธ์ JSON:</p>
+        <pre id="output" class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"></pre>
+    </div>
+
+    <script>
+    async function callApi() {
+        const output = document.getElementById('output');
+        output.textContent = "กำลังเรียก API...";
+
+        try {
+            const res = await fetch('https://unstifling-proprivilege-amada.ngrok-free.dev/echo', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: 'สวัสดีจากหน้าเว็บ!' })
+            });
+            const data = await res.json();
+            // แสดง JSON แบบอ่านง่าย
+            output.textContent = JSON.stringify(data, null, 2);
+        } catch (err) {
+            output.textContent = "เกิดข้อผิดพลาด: " + err;
+        }
+    }
+    </script>
+
+</body>
+</html>

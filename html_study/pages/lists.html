@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้เกี่ยวกับ List ใน HTML</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- Content Card -->
+    <div class="list-content bg-white max-w-4xl w-full rounded-2xl shadow-lg p-6 md:p-10">
+
+        <h1 class="text-3xl font-bold text-purple-700 mb-4 text-center">
+            📋 เรียนรู้เกี่ยวกับรายการ (List) ใน HTML
+        </h1>
+
+        <p class="text-gray-600 mb-3">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการสร้างรายการใน HTML โดยใช้แท็ก
+            <span class="font-semibold">&lt;ul&gt;</span>
+            สำหรับรายการที่ไม่มีลำดับ และ
+            <span class="font-semibold">&lt;ol&gt;</span>
+            สำหรับรายการที่มีลำดับ
+        </p>
+
+        <!-- UL -->
+        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-2">
+            🔹 ตัวอย่างแท็ก &lt;ul&gt; (Unordered List)
+        </h3>
+
+        <pre class="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm mb-4">
+&lt;ul&gt;
+    &lt;li&gt;รายการที่ 1&lt;/li&gt;
+    &lt;li&gt;รายการที่ 2&lt;/li&gt;
+    &lt;li&gt;รายการที่ 3&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <p class="text-gray-600 mb-3">
+            แท็ก <span class="font-semibold">&lt;ul&gt;</span>
+            ใช้สำหรับสร้างรายการที่ไม่มีลำดับ โดยจะแสดงเป็นจุด (•)
+        </p>
+
+        <ul class="list-disc list-inside bg-purple-50 rounded-lg p-4 mb-6">
+            <li>รายการที่ 1</li>
+            <li>รายการที่ 2</li>
+            <li>รายการที่ 3</li>
+        </ul>
+
+        <!-- OL -->
+        <h3 class="text-xl font-semibold text-purple-800 mb-2">
+            🔢 ตัวอย่างแท็ก &lt;ol&gt; (Ordered List)
+        </h3>
+
+        <pre class="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm mb-4">
+&lt;ol&gt;
+    &lt;li&gt;รายการที่ 1&lt;/li&gt;
+    &lt;li&gt;รายการที่ 2&lt;/li&gt;
+    &lt;li&gt;รายการที่ 3&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+
+        <p class="text-gray-600 mb-3">
+            แท็ก <span class="font-semibold">&lt;ol&gt;</span>
+            ใช้สำหรับสร้างรายการที่มีลำดับ โดยจะแสดงเป็นตัวเลข
+        </p>
+
+        <ol class="list-decimal list-inside bg-purple-50 rounded-lg p-4">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    </div>
+
+    <!-- Back Button -->
+    <button
+        onclick="window.location.href='../index.html'"
+        class="mt-8 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+        ⬅ กลับไปหน้าหลัก
+    </button>
+
+</body>
+</html>

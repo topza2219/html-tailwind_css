@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้เกี่ยวกับ Symbols ใน HTML</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-orange-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- Content Card -->
+    <div class="symbols-content bg-white max-w-4xl w-full rounded-2xl shadow-lg p-6 md:p-10">
+
+        <h1 class="text-3xl font-bold text-orange-700 mb-4 text-center">
+            🔣 เรียนรู้เกี่ยวกับสัญลักษณ์ใน HTML
+        </h1>
+
+        <p class="text-gray-600 mb-3">
+            ในบทเรียนนี้ เราจะเรียนรู้เกี่ยวกับการใช้
+            <span class="font-semibold">&ldquo;สัญลักษณ์ (Symbols)&rdquo;</span>
+            ใน HTML เพื่อแสดงตัวอักษรพิเศษที่ไม่สามารถพิมพ์ได้โดยตรง
+        </p>
+
+        <p class="text-gray-600 mb-6">
+            สัญลักษณ์ใน HTML มักถูกแทนด้วย
+            <span class="font-semibold text-orange-600">HTML Entities</span>
+            เช่น <code>&amp;amp;</code>, <code>&amp;lt;</code>, และ <code>&amp;gt;</code>
+        </p>
+
+        <!-- Code Example -->
+        <h3 class="text-xl font-semibold text-orange-800 mb-3">
+            💻 ตัวอย่างโค้ด HTML สำหรับสัญลักษณ์
+        </h3>
+
+        <pre class="bg-gray-900 text-green-400 rounded-xl p-4 overflow-x-auto text-sm mb-6">
+&lt;p&gt;นี่คือเครื่องหมายแอมเพอร์แซนด์: &amp;amp;&lt;/p&gt;
+&lt;p&gt;นี่คือเครื่องหมายเล็กกว่า: &amp;lt;&lt;/p&gt;
+&lt;p&gt;นี่คือเครื่องหมายมากกว่า: &amp;gt;&lt;/p&gt;
+        </pre>
+
+        <p class="text-gray-600 mb-4">
+            ในตัวอย่างข้างต้น เราได้ใช้รหัสพิเศษ (HTML Entities)
+            เพื่อแสดงสัญลักษณ์ต่าง ๆ ใน HTML อย่างถูกต้อง
+        </p>
+
+        <!-- Result -->
+        <h3 class="text-xl font-semibold text-orange-800 mb-3">
+            ✅ ตัวอย่างสัญลักษณ์ที่แสดงผลลัพธ์
+        </h3>
+
+        <div class="bg-orange-50 rounded-xl p-4 space-y-2">
+            <p>🔸 เครื่องหมายแอมเพอร์แซนด์: <span class="font-bold">&amp;</span></p>
+            <p>🔸 เครื่องหมายเล็กกว่า: <span class="font-bold">&lt;</span></p>
+            <p>🔸 เครื่องหมายมากกว่า: <span class="font-bold">&gt;</span></p>
+        </div>
+
+    </div>
+
+    <!-- Back Button -->
+    <button
+        onclick="window.location.href='../index.html'"
+        class="mt-8 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+        ⬅ กลับไปหน้าหลัก
+    </button>
+
+</body>
+</html>
